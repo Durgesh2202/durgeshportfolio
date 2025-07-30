@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements & Certifications | Durgesh Waingankar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <style>
+        .achievements-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.3rem;
+            margin: 2rem 0 0 0;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .achievement-item {
+            display: flex;
+            align-items: flex-start;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,255,65,0.07);
+            padding: 1.1rem 1rem 1rem 1rem;
+            gap: 1.1rem;
+            min-width: 0;
+            width: 100%;
+            transition: box-shadow 0.2s;
+        }
+        .achievement-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: rgba(0,255,65,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            color: var(--primary-color);
+            margin-top: 0.15rem;
+            flex-shrink: 0;
+        }
+        .achievement-content h3 {
+            font-size: 1.04rem;
+            color: var(--primary-color);
+            font-family: 'IBM Plex Mono', monospace;
+            margin-bottom: 0.15rem;
+            font-weight: 700;
+        }
+        .achievement-content p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.3rem;
+            margin: 2rem auto 0 auto;
+            justify-items: center;
+            max-width: 1200px;
+        }
+        .certificate-card {
+            display: flex;
+            align-items: flex-start;
+            background: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,255,65,0.07);
+            padding: 1.1rem 1rem 1rem 1rem;
+            gap: 1rem;
+            min-width: 0;
+            width: 100%;
+            max-width: 300px;
+            transition: box-shadow 0.2s;
+        }
+        .certificate-card.empty {
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            pointer-events: none;
+            visibility: hidden;
+        }
+        .certificate-icon {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0,255,65,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.15rem;
+        }
+        .certificate-details h4 {
+            font-size: 0.99rem;
+            color: var(--primary-color);
+            margin-bottom: 0.08rem;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 600;
+        }
+        .certificate-details p {
+            color: var(--text-secondary);
+            font-size: 0.91rem;
+            margin: 0;
+        }
+        @media (max-width: 1200px) {
+            .certificates-grid { grid-template-columns: repeat(2, 1fr);}
+        }
+        @media (max-width: 900px) {
+            .achievements-list { max-width: 100%; }
+            .certificates-grid { grid-template-columns: 1fr;}
+        }
+        /* Testimonials shown together */
+        .testimonials-slider {
+            max-width: 800px;
+            margin: 2.5rem auto 1rem auto;
+        }
+        .testimonial-card {
+            background: rgba(19,24,32,0.99);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+            border: 1px solid #252a34;
+            margin-bottom: 1.5rem;
+        }
+        .testimonial-content { font-style:italic; color:#a0a0a0; font-size:1.12rem; margin-bottom: 1.3rem; padding-left: 2.5rem; position:relative;}
+        .quote-icon { font-size:2.2rem; color:rgba(0,255,65,0.15); position:absolute; left:0; top:-12px; }
+        .testimonial-author { text-align:right; }
+        .author-name { color:#00ff41; font-weight:600; font-size:1.03rem; margin-bottom:0.2rem;}
+        .author-title { color:#a0a0a0; font-size:0.93rem;}
+    </style>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="grid-overlay"></div>
+    <div class="scanline"></div>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">DW</a>
+                <div class="status">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Active</span>
+                </div>
+            </div>
+            <div class="menu-toggle"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="nav-link"><i class="fas fa-user-shield"></i> About</a></li>
+                <li><a href="experience.html" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="projects.html" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="activities.html" class="nav-link"><i class="fas fa-tasks"></i> Activities</a></li>
+                <li><a href="achievements.html" class="nav-link active"><i class="fas fa-award"></i> Achievements</a></li>
+                <li><a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Achievements & Certifications</h1>
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / <span>Achievements</span>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2>Highlights & Achievements</h2>
+                <div class="achievements-container">
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-bug"></i></div>
+                            <div class="achievement-content">
+                                <h3>Dutch Parliament Security Bug</h3>
+                                <p>Successfully identified and responsibly reported a security vulnerability on the Dutch Parliament website.</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-landmark"></i></div>
+                            <div class="achievement-content">
+                                <h3>Government of India Bug Report</h3>
+                                <p>Reported a Critical security vulnerability to the Department of Telecommunications, Government of India .</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                            <div class="achievement-content">
+                                <h3>CODEARENA 1.0 Hackathon Participation</h3>
+                                <p>Participated in a 48-hour Smart India Hackathon local hackathon conducted by RRU (Sept 2024).</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-award"></i></div>
+                            <div class="achievement-content">
+                                <h3>NCIIPC SecEx 2025 (National Cyber Exercise) Training Assistant & Volunteer</h3>
+                                <p>Assisted in client-side hardening and blue team ops during Live Fire Exercise at NISM, Mumbai.
+Part of major cyber defense simulation by NCIIPC (NTRO) and Rashtriya Raksha University.
+</p>
+                            </div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-icon"><i class="fas fa-user-shield"></i></div>
+                            <div class="achievement-content">
+                                <h3>Cybersec Expo India Recognition</h3>
+                                <p>Reported a critical security bug on Cybersec Expo India webpage, the country's largest cybersecurity expo. Received an exclusive Delegate Entry invitation for event as recognition .</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="mt-5">Certifications</h2>
+                <div class="certificates-container">
+                    <div class="certificates-grid">
+                        <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Digital Forensics Essential (DFE)</h4>
+                                <p>EC COUNCIL | August 2023</p>
+                            </div>
+                        </div>
+                        <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Advance Open-Source Intelligence and Privacy</h4>
+                                <p>EC COUNCIL | August 2023</p>
+                            </div>
+                        </div>
+                        <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Advance Cyber Security - Threats and Governance</h4>
+                                <p>Great Learning | September 2023</p>
+                            </div>
+                        </div>
+                        <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Android Forensics with Belkasoft</h4>
+                                <p>6CPE Credits | March 2024</p>
+                            </div>
+                        </div>
+                        <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Certified Network Security Practitioner (CNSP)</h4>
+                                <p>SecOps | February 2025</p>
+                            </div>
+                        </div>
+                        <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Maltego for Cybercrime Investigations</h4>
+                                <p>Maltego | July 2025</p>
+                            </div>
+                        </div>
+                         <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Junior Cybersecurity Analyst</h4>
+                                <p>Cisco | May 2026</p>
+                            </div>
+                        </div>
+                        <div class="certificate-card">
+                            <div class="certificate-icon"><i class="fas fa-certificate"></i></div>
+                            <div class="certificate-details">
+                                <h4>Android Bug Bounty</h4>
+                                <p>EC-Council | Oct 2023</p>
+                            </div>
+                        </div>
+                        <div class="certificate-card empty"></div>
+                        <div class="certificate-card empty"></div>
+                    </div>
+                </div>
+                <h2 class="mt-5">Testimonials</h2>
+                <div class="testimonials-slider">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Durgesh demonstrated strong skills in OSINT, malware analysis, security threat assessment, digital forensics, and cyber crime investigation during his tenure.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <p class="author-name">Maharashtra Cyber Police Station</p>
+                            <p class="author-title">MBVV Police Commissionerate</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Durgesh was recognized for his expertise in Digital Forensics and VAPT. He showed exceptional dedication and professionalism.</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <p class="author-name">Rashtriya Raksha University [MHA]</p>
+                            <p class="author-title">Gandhinagar, Gujarat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Durgesh Waingankar</h3>
+                    <p>Cybersecurity Researcher</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/Durgesh2202" target="_blank" class="footer-social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/durgeshw2" target="_blank" class="footer-social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:durgeshw22@gmail.com" class="footer-social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Durgesh Waingankar. All rights reserved.</p>
+                <p class="footer-credits">
+                    <span class="terminal-text">
+                        <span class="footer-cursor">></span> Made with <i class="fas fa-shield-alt"></i> and <i class="fas fa-code"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="footer-info">
+                <p class="last-updated">Last updated: 2025-07-28 18:45:00</p>
+                <p class="current-user">Logged in as: Durgesh2202</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/navigation.js"></script>
+</body>
+</html>

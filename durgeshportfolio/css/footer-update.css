@@ -1,0 +1,31 @@
+/* Add this to your style.css file */
+.footer-info {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-family: 'Share Tech Mono', monospace;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0, 255, 65, 0.1);
+}
+
+.last-updated, .current-user {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    border-left: 2px solid var(--primary-color);
+}
+
+.current-user {
+    display: flex;
+    align-items: center;
+}
+
+.current-user:before {
+    content: "●";
+    color: var(--primary-color);
+    margin-right: 5px;
+    font-size: 0.7rem;
+    animation: pulse 2s infinite;
+}
