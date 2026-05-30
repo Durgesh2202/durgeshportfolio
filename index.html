@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Durgesh Waingankar — Offensive Security & VAPT</title>
+<meta name="description" content="Durgesh Waingankar — Cybersecurity professional specializing in VAPT, Red Teaming, and Digital Forensics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,700;0,800;1,400&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- background layers -->
+<canvas id="matrix"></canvas>
+<div class="bg-grid"></div>
+<div class="bg-vignette"></div>
+<div class="scanlines"></div>
+<div class="flicker"></div>
+<div id="scrollbar"></div>
+
+<!-- BOOT -->
+<div id="boot">
+  <div class="boot-inner">
+    <div class="bl hd">eternalsec:~$ ./init_portfolio.sh</div>
+    <div class="barline"><span>boot</span><div class="bar"><i></i></div></div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#top" class="brand">
+    <span class="dot"></span>
+    <span>eternalsec<span style="color:var(--muted)">:</span><b>~</b><span class="blink">█</span></span>
+  </a>
+  <nav class="links">
+    <a href="#about" data-sec="about"><span class="hash">#</span>about</a>
+    <a href="#experience" data-sec="experience"><span class="hash">#</span>experience</a>
+    <a href="#education" data-sec="education"><span class="hash">#</span>education</a>
+    <a href="#projects" data-sec="projects"><span class="hash">#</span>projects</a>
+    <a href="#skills" data-sec="skills"><span class="hash">#</span>skills</a>
+    <a href="#certs" data-sec="certs"><span class="hash">#</span>certs</a>
+    <a href="#contact" data-sec="contact"><span class="hash">#</span>contact</a>
+  </nav>
+  <div class="burger"><span></span><span></span><span></span></div>
+</header>
+
+<main class="wrap" id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="hero">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <div class="term-tag"><span class="live"></span> AVAILABLE FOR RESEARCH &amp; COLLABORATION · MUMBAI, IN</div>
+        <h1>
+          <span class="ln">DURGESH</span>
+          <span class="ln green glitch" data-t="WAINGANKAR">WAINGANKAR</span>
+        </h1>
+        <div class="alias">// aka <span>@EternalSec</span> — root operator</div>
+        <div class="role-line"><span class="pre">$ </span><span id="role"></span><span class="cur"></span></div>
+        <p class="lede">
+          Results-driven cybersecurity professional specializing in <b>VAPT</b>, <b>red teaming</b>, and <b>digital forensics</b> — across web, network, Android, and Active Directory environments. Recognized for responsible vulnerability disclosure and hands-on defensive training for <b>ISRO scientists</b> &amp; <b>Cyber Commandos</b>.
+        </p>
+        <div class="cta-row">
+          <a href="#projects" class="btn solid"><span class="ar">▶</span> view_projects</a>
+          <a href="#contact" class="btn"><span class="ar">›</span> get_in_touch</a>
+        </div>
+        <div class="hero-stats">
+          <div class="st"><b data-count="20" data-suf="+">0</b><span>CYBERCRIME CASES</span></div>
+          <div class="st"><b data-count="30" data-suf="+">0</b><span>VULNS DETECTED</span></div>
+          <div class="st"><b data-count="8" data-suf="">0</b><span>CERTIFICATIONS</span></div>
+          <div class="st"><b data-count="10" data-suf="+">0</b><span>DEVICES FORENSICS</span></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <span class="float-glyph" data-par="0.10" style="top:-30px; left:-10px;">0x1F</span>
+        <span class="float-glyph" data-par="-0.14" style="bottom:-26px; right:18px;">[ AES-256 ]</span>
+        <span class="float-glyph" data-par="0.18" style="top:40%; right:-30px;">&lt;/&gt;</span>
+        <div class="id-card" data-tilt>
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="barhead"><i></i><i></i><i class="g"></i><span>EternalSec.id</span></div>
+          <div class="photo-frame">
+            <img src="assets/durgesh-full.png" alt="Durgesh Waingankar">
+            <div class="sweep"></div>
+          </div>
+          <div class="meta">
+            <div>HANDLE <span>@EternalSec</span></div>
+            <div>FOCUS <span>RED TEAM / VAPT</span></div>
+            <div>CLEARANCE <span>CRTS v2 · CEH v13</span></div>
+            <div>LOCATION <span>MUMBAI, IN</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>cat <span class="arg">whoami.txt</span></div>
+      <div class="rule"></div><div class="idx">01 / 08</div>
+    </div>
+    <div class="about-grid reveal d1">
+      <div class="console">
+        <div class="titlebar"><i></i><i></i><i></i><span>~/about/whoami.txt</span></div>
+        <div class="body">
+          <p>I'm a <b>Cybersecurity &amp; Digital Forensics</b> postgraduate (M.Sc., Rashtriya Raksha University) who lives in the offensive side of security — breaking systems to make them stronger.</p>
+          <p>My work spans <b>vulnerability assessment &amp; penetration testing</b> across network, web, Android, and Active Directory environments, paired with real-world <b>cyber forensics</b> experience supporting 20+ police investigations.</p>
+          <p>I build my own tooling, automate recon &amp; exploitation pipelines, and translate deep technical findings into clear <b>executive-level reports</b>. I'm recognized for <b>responsible disclosure</b> and have trained ISRO scientists and Cyber Commandos in defensive operations.</p>
+          <div class="tag-row" style="margin-top:18px;">
+            <span class="chip">VAPT</span><span class="chip">Red Teaming</span><span class="chip">Digital Forensics</span>
+            <span class="chip">OSINT</span><span class="chip">Active Directory</span><span class="chip">Mobile Security</span>
+            <span class="chip">Reporting</span><span class="chip">Tool Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section id="experience">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>tail -f <span class="arg">experience.log</span></div>
+      <div class="rule"></div><div class="idx">02 / 08</div>
+    </div>
+    <div class="timeline">
+      <div class="xp reveal">
+        <div class="top">
+          <div>
+            <h3>Cybersecurity Analyst</h3>
+            <div class="org"><span class="redacted">[ REDACTED ]</span> · Mumbai · <span style="color:var(--muted)">under NDA</span></div>
+          </div>
+          <div class="when">2026 — PRESENT</div>
+        </div>
+        <ul>
+          <li>Monitor, detect, and respond to security threats across enterprise infrastructure and endpoints.</li>
+          <li>Perform vulnerability assessments, threat analysis, and support incident response operations.</li>
+          <li>Strengthen organizational security posture through continuous monitoring, hardening, and reporting.</li>
+        </ul>
+      </div>
+      <div class="xp reveal d1">
+        <div class="top">
+          <div>
+            <h3>Cybersecurity Associate Intern</h3>
+            <div class="org">GlobeSecure Technologies Pvt Ltd · Mumbai</div>
+          </div>
+          <div class="when">JAN 2026 — APR 2026</div>
+        </div>
+        <ul>
+          <li>Performed VAPT on network/infrastructure environments; identified misconfigurations, exposed services, and security weaknesses.</li>
+          <li>Conducted security testing on web and Android apps covering authentication, access control, and input validation.</li>
+          <li>Prepared technical &amp; executive-level reports with risk ratings, impact analysis, and remediation recommendations.</li>
+        </ul>
+      </div>
+      <div class="xp reveal d2">
+        <div class="top">
+          <div>
+            <h3>Cyber Forensics &amp; OSINT Intern</h3>
+            <div class="org">MBVV Cyber Police Station · Mumbai</div>
+          </div>
+          <div class="when">DEC 2023 — JUL 2024</div>
+        </div>
+        <ul>
+          <li>Assisted in 20+ cybercrime investigations (phishing, account compromise, financial fraud); performed evidence correlation.</li>
+          <li>Performed mobile forensic extractions on 10+ devices using Cellebrite UFED, producing court-ready evidence reports.</li>
+          <li>Conducted OSINT, social media investigations, and Android APK analysis for threat attribution.</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>cat <span class="arg">education.cfg</span></div>
+      <div class="rule"></div><div class="idx">03 / 08</div>
+    </div>
+    <div class="edu-grid">
+      <div class="edu reveal">
+        <span class="corner tl"></span><span class="corner br"></span>
+        <div class="edu-top"><span class="deg">M.Sc.</span><span class="gpa">CGPA 7.4 · 2026</span></div>
+        <h3>Cybersecurity &amp; Digital Forensics</h3>
+        <div class="inst">Rashtriya Raksha University · Gandhinagar</div>
+        <p>Specialized postgraduate program in offensive security, digital forensics, and critical-infrastructure defense.</p>
+      </div>
+      <div class="edu reveal d1">
+        <span class="corner tl"></span><span class="corner br"></span>
+        <div class="edu-top"><span class="deg">B.C.A.</span><span class="gpa">CGPA 7.5 · 2024</span></div>
+        <h3>Bachelor of Computer Applications</h3>
+        <div class="inst">K.B.P. Hinduja College of Commerce · Mumbai</div>
+        <p>Foundations in computing, programming, and information systems — the launchpad into security.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>ls -la <span class="arg">~/projects/</span></div>
+      <div class="rule"></div><div class="idx">04 / 08</div>
+    </div>
+    <div class="proj-grid">
+      <div class="card reveal">
+        <span class="arrow">↗</span>
+        <div class="ptop"><span class="pno">PROJ_01</span><span class="badge tool">TOOL</span></div>
+        <div class="pname"><span class="gl">▮</span> VulnScan</div>
+        <div class="ptype">Web &amp; Network Vulnerability Scanner + POC Generator</div>
+        <p class="pd">Automated network vulnerability scanner with severity classification, POC generation, and a GUI + CLI dashboard for real-time monitoring.</p>
+        <p class="pd">Generates HTML/CSV reports with detailed evidence — detected 30+ vulnerabilities across test environments, used as real client deliverables.</p>
+        <div class="stack"><span>Python</span><span>Nmap NSE</span><span>CustomTkinter</span><span>YAML</span></div>
+      </div>
+
+      <div class="card reveal d1">
+        <span class="arrow">↗</span>
+        <div class="ptop"><span class="pno">PROJ_02</span><span class="badge crit">OFFENSIVE</span></div>
+        <div class="pname"><span class="gl">▮</span> ReconVAPT</div>
+        <div class="ptype">VAPT &amp; Reconnaissance Framework</div>
+        <p class="pd">Modular framework automating end-to-end recon, scanning &amp; exploitation; integrates 10+ tools for SQLi, XSS, SSRF, and LFI/RFI detection.</p>
+        <p class="pd">AI-based CVE and tech-stack detection with automated subdomain/directory enumeration, drastically reducing manual recon time.</p>
+        <div class="stack"><span>Python</span><span>Nuclei</span><span>SQLMap</span><span>Dalfox</span><span>Subfinder</span><span>Amass</span><span>FFUF</span></div>
+      </div>
+
+      <div class="card reveal d2">
+        <span class="arrow">↗</span>
+        <div class="ptop"><span class="pno">PROJ_03</span><span class="badge live">DEFENSIVE</span></div>
+        <div class="pname"><span class="gl">▮</span> Endpoint Intruder Detection</div>
+        <div class="ptype">Tamper-proof Unauthorized-Access Capture System</div>
+        <p class="pd">Captures webcam images of unauthorized access attempts and emails the evidence automatically — works in online &amp; offline/isolated environments.</p>
+        <div class="stack"><span>PowerShell</span><span>Webcam Automation</span><span>SMTP</span><span>Task Scheduler</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>./list <span class="arg">--skills --tools</span></div>
+      <div class="rule"></div><div class="idx">05 / 08</div>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-block reveal">
+        <h4>offensive_security</h4>
+        <div class="tags">
+          <span>VAPT</span><span>Red Teaming</span><span>Web</span><span>Network</span>
+          <span>Active Directory</span><span>Android</span><span>OSINT</span>
+        </div>
+      </div>
+      <div class="skill-block reveal d1">
+        <h4>techniques</h4>
+        <div class="tags">
+          <span>XSS</span><span>IDOR</span><span>SQLi</span><span>SSRF</span><span>CORS</span>
+          <span>Auth Bypass</span><span>MITRE ATT&amp;CK</span><span>Network Enum</span><span>AD Attacks</span><span>Mobile Security</span>
+        </div>
+      </div>
+      <div class="skill-block reveal d2">
+        <h4>tools</h4>
+        <div class="tags">
+          <span>Burp Suite</span><span>Nmap</span><span>Metasploit</span><span>Nuclei</span><span>Mimikatz</span>
+          <span>BloodHound</span><span>Impacket</span><span>MobSF</span><span>Frida</span><span>Hydra</span><span>Cellebrite UFED</span>
+        </div>
+      </div>
+      <div class="skill-block reveal d3">
+        <h4>reporting_and_platforms</h4>
+        <div class="tags">
+          <span>VAPT Reports</span><span>Executive Summaries</span><span>SOP Development</span>
+          <span>Risk Rating</span><span>Remediation Docs</span><span>Linux</span><span>Windows</span><span>Python</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CERTS ============ -->
+  <section id="certs">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>cat <span class="arg">certifications/*</span></div>
+      <div class="rule"></div><div class="idx">06 / 08</div>
+    </div>
+    <div class="cert-grid">
+      <div class="cert reveal"><div class="seal">✓</div><span class="yr">2026</span><b>CRTS v2</b><span>Cyberwarfare Labs</span></div>
+      <div class="cert reveal"><div class="seal">✓</div><span class="yr">2026</span><b>CEH v13</b><span>EC-Council</span></div>
+      <div class="cert reveal"><div class="seal">✓</div><span class="yr">2025</span><b>CRTA</b><span>Cyberwarfare Labs</span></div>
+      <div class="cert reveal"><div class="seal">✓</div><span class="yr">2025</span><b>ADRTS</b><span>Cyberwarfare Labs</span></div>
+      <div class="cert reveal d1"><div class="seal">✓</div><span class="yr">2025</span><b>ISO/IEC 27001 LA</b><span>Mastermind</span></div>
+      <div class="cert reveal d1"><div class="seal">✓</div><span class="yr">2025</span><b>CNSP</b><span>SecOps</span></div>
+      <div class="cert reveal d1"><div class="seal">✓</div><span class="yr">2025</span><b>Cyber Essentials</b><span>Cisco NetAcad</span></div>
+      <div class="cert reveal d1"><div class="seal">✓</div><span class="yr">2024</span><b>Digital Forensics</b><span>EC-Council</span></div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section id="achievements">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>git log <span class="arg">--achievements</span></div>
+      <div class="rule"></div><div class="idx">07 / 08</div>
+    </div>
+    <div class="ach-list reveal d1">
+      <div class="ach">
+        <div class="ic">★</div>
+        <div class="txt"><b>Training Assistant — NCIIPC SecEx 2025</b><p>Supported national cyber exercises for critical infrastructure (RRU–NCIIPC, Apr 2025); assisted Blue Team training.</p></div>
+      </div>
+      <div class="ach">
+        <div class="ic">★</div>
+        <div class="txt"><b>Blue Team Assistant — Joint NSCS–ISRO–RRU Cyber Defense Program</b><p>Supported hands-on defense operations for 40 ISRO/DOS scientists (Sep 2025).</p></div>
+      </div>
+      <div class="ach">
+        <div class="ic">★</div>
+        <div class="txt"><b>CTF Trainer — Cyber Commando Training Program, RRU</b><p>Delivered practical CTF &amp; defensive cyber exercises for 30 Cyber Commandos (Jan 2025).</p></div>
+      </div>
+      <div class="ach">
+        <div class="ic">★</div>
+        <div class="txt"><b>High-Severity Vulnerability — Cybersec Expo India</b><p>Reported a high-severity vulnerability; received recognition and an exclusive delegate invitation.</p></div>
+      </div>
+      <div class="ach">
+        <div class="ic">★</div>
+        <div class="txt"><b>Responsible Disclosure — HackwithIndia Bug Bounty</b><p>Recognized for responsible vulnerability disclosure during the competition.</p></div>
+      </div>
+      <div class="ach">
+        <div class="ic">★</div>
+        <div class="txt"><b>AI Treasure Hunt CTF — Finalist</b><p>School of IT, AI &amp; Cybersecurity, Rashtriya Raksha University.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact">
+    <div class="sec-head reveal">
+      <div class="cmd"><span class="p">$ </span>./connect <span class="arg">--secure</span></div>
+      <div class="rule"></div><div class="idx">08 / 08</div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-term reveal">
+        <div class="l"><span class="p">eternalsec:~$</span> <span class="o">whoami --contact</span></div>
+        <div class="l" style="color:var(--phos);text-shadow:var(--glow);">&gt; Let's secure something together.</div>
+        <p style="color:var(--txt-2); margin:16px 0; font-size:14px;">Open to roles in offensive security, VAPT, red teaming, and forensics. Ping me on any channel — encrypted or otherwise.</p>
+        <div class="l" style="margin-top:18px;"><span class="p">status:</span> <span class="o" style="color:var(--phos)">● ONLINE — Mumbai, IN</span></div>
+        <div class="l"><span class="p">response_time:</span> <span class="o">&lt; 24h</span></div>
+      </div>
+      <div class="contact-links reveal d1">
+        <a class="clink" href="mailto:durgeshw2292@gmail.com">
+          <div class="ci">@</div>
+          <div class="cmeta"><b>durgeshw2292@gmail.com</b><span>email</span></div>
+          <div class="go">›</div>
+        </a>
+        <a class="clink" href="https://durgeshportfolio.me" target="_blank">
+          <div class="ci">⌘</div>
+          <div class="cmeta"><b>durgeshportfolio.me</b><span>website</span></div>
+          <div class="go">›</div>
+        </a>
+        <a class="clink" href="https://www.linkedin.com/in/durgeshw2" target="_blank">
+          <div class="ci">in</div>
+          <div class="cmeta"><b>linkedin.com/in/durgeshw2</b><span>professional network</span></div>
+          <div class="go">›</div>
+        </a>
+        <a class="clink" href="https://github.com/Durgesh2202" target="_blank">
+          <div class="ci">&lt;/&gt;</div>
+          <div class="cmeta"><b>github.com/Durgesh2202</b><span>tools &amp; research</span></div>
+          <div class="go">›</div>
+        </a>
+        <a class="clink" href="https://medium.com/@EternalSec" target="_blank">
+          <div class="ci">M</div>
+          <div class="cmeta"><b>Medium</b><span>@EternalSec · writeups &amp; research</span></div>
+          <div class="go">›</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap frow">
+    <div class="fbrand">eternalsec:~$ <span class="blink" style="color:var(--phos)">█</span></div>
+    <div class="fmeta">© 2026 Durgesh Waingankar · <span class="ok">all systems operational</span> · built in the terminal</div>
+    <a href="#top" class="totop">▲ back_to_top</a>
+  </div>
+</footer>
+
+<!-- scroll telemetry HUD -->
+<div id="hud" aria-hidden="true">
+  <div class="pct">00%</div>
+  <div class="track"><i></i></div>
+  <div class="dots">
+    <b data-d="hero"></b><b data-d="about"></b><b data-d="experience"></b><b data-d="education"></b><b data-d="projects"></b><b data-d="skills"></b><b data-d="certs"></b><b data-d="achievements"></b><b data-d="contact"></b>
+  </div>
+</div>
+
+<!-- custom targeting-reticle cursor -->
+<div id="reticle" aria-hidden="true">
+  <span class="ring"></span>
+  <span class="tick n"></span><span class="tick s"></span><span class="tick e"></span><span class="tick w"></span>
+</div>
+<div id="cur-dot" aria-hidden="true"></div>
+<div id="cur-label" aria-hidden="true">0x00</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
